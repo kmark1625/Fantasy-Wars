@@ -1,2 +1,4 @@
 # karma packages/dependencies
 node_modules/*
+
+.idea/*

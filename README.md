@@ -63,6 +63,12 @@ Dwarves who have built advanced technologies for themselves.
 ## Orcs
 Bumbling, but deadly orcs.  Beware of their sharp axes.
 
+## How to run the game
+*cd into Fantasy Wars directory
+*npm install
+*npm install http-server -g
+*run 'http-server ./ -p={desired_port}'
+
 ## How to run test suite
 * npm install
 * npm install -g karma-cli (to install npm globally)
