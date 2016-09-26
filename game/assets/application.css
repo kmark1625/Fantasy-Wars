@@ -1,10 +1,11 @@
 html {
   background: #660000;
-  background-image: url("http://images.alphacoders.com/159/159431.jpg");
+  /*background-image: url("http://images.alphacoders.com/159/159431.jpg");*/
+  background-image: url("http://wallpapercave.com/wp/CBuabPJ.jpg");
 }
 
 canvas {
-  margin: 32px auto;
+  margin: 36px auto;
 }
 
 h2 {
