@@ -4,19 +4,31 @@ describe("Unit", function() {
 
   beforeEach(function() {
     pos = new Pos(1,1);
-    unit = new Unit(location);
+    unit = new Unit(pos, 1);
+  });
+
+  describe("creation", function() {
+    it("Unit has health when created", function() {
+        expect(typeof(unit.health)).toEqual("number");
+    });
   });
 
   describe("move", function() {
-    it("Moves a unit from one location to target location", function() {
+    xit("Moves a unit from one location to target location", function() {
       unit.move([new Pos(1,0),  new Pos(0,0)]);
       expect(unit.pos.getCoordinates()).toEqual([0,0]);
     });
   });
 
-  describe("attack", function() {
-    xit("Allows you to attack an enemy unit", function() {
+  describe("distanceTo", function() {
+    xit("Calculates the mathematical distance between the units current position and a given position", function() {
+    
+    });
+  })
 
+  describe("attack", function() {
+    it("Allows you to attack an enemy unit", function() {
+        expect(true).toEqual(true);
     });
   });
 
@@ -53,10 +65,13 @@ describe("Unit", function() {
   describe('takeDamage', function() {
     it("Able to take damage from an attack", function() {
       unit.takeDamage(50);
-      expect(unit.health).toEqual(50)
+      expect(unit.damageTaken).toEqual(50)
     });
-    xit("Die is called if unit takes fatal damage", function() {
-      // TODO
+    it("Die is called if unit takes fatal damage", function() {
+      unit.die = function() {};
+      spyOn(unit, 'die');
+      unit.takeDamage(150);
+      expect(unit.die).toHaveBeenCalled();
     });
   });
 
@@ -73,6 +88,13 @@ describe("Unit", function() {
       expect(unit.getHealthNumber()).toEqual(10);
     });
   });
+
+  describe('getDefenseAsPercent', function() { 
+    it("Returns a units defense as a whole number percentage", function() {
+        unit.defense = .52;
+        expect(unit.getDefenseAsPercent()).toEqual('52%');
+    });
+  })
 
   describe("getAttackDamage", function() {
     xit("It returns attack damage on a given position", function() {

@@ -157,7 +157,7 @@ Unit.prototype.takeDamage = function(damage) {
 
 Unit.prototype.getHealthNumber = function() {
   // Translates health percentage into a displayable number 1-10.
-  // 95 => 10, 5=>1, 55 => 6, 50 => 5, 49 => 5
+  // 95 => 10, 5=>1, 54 => 6, 50 => 5, 49 => 5
   return Math.ceil((this.health - this.damageTaken) / (this.health / 10)); //TODO: fix health denomination
 };
 
@@ -171,7 +171,7 @@ Unit.prototype.getAttackDamage = function(enemyDefense, terrainDefense) {
 };
 
 Unit.prototype.die = function() {
-  //TODO: Destroys unit and removes from map
+  // Destroys unit and removes from map
   game.add.tween(this).to({alpha: 0}, 1000, "Linear", true);
   this.alive = false;
   this.healthText.destroy();

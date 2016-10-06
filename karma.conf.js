@@ -24,6 +24,7 @@ module.exports = function(config) {
       'game/battle/player/units/unitFlying.js',
       'game/battle/player/units/unitArtillery.js',
       'game/**/*.js',
+      'spec/**/*.js',
       'spec/unitSpec.js',
       // TODO: load files in dependency order
     ],

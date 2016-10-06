@@ -1,5 +1,10 @@
 describe("Player", function() {
 
+    beforeEach(function() {
+        // Creates a player 
+        // Needs an army
+    });
+
   describe("onLocationSelect", function() {
     xit("Returns appropriate options when location is selected", function() {
     });
