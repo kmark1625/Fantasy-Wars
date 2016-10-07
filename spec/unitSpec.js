@@ -13,6 +13,14 @@ describe("Unit", function() {
     });
   });
 
+  describe("grayOut", function() {
+    it("Grays out the unit when called", function() {
+       game = new Phaser.Game(1000, 800, Phaser.AUTO, 'canvasGame');  
+       unit.grayOut();
+       expect(unit.filters[0]["gray"]).toEqual(1);
+    });
+  })
+
   describe("move", function() {
     xit("Moves a unit from one location to target location", function() {
       unit.move([new Pos(1,0),  new Pos(0,0)]);
@@ -38,9 +46,10 @@ describe("Unit", function() {
     });
   });
 
-  describe("getSurroundingTiles", function() {
-    xit("Returns an array of all surrounding tiles of a given location", function() {
-
+  describe("getSurroundingPos", function() {
+    it("Returns an array of all Pos immediately surrounding a given location - does not include diagonals", function() {
+        var surroundingPos = unit.getSurroundingPos(unit.pos);
+        expect(surroundingPos.length).toEqual(4);
     });
   });
 
@@ -104,7 +113,18 @@ describe("Unit", function() {
 
   describe("die", function() {
     xit("Unit is destroyed", function() {
-
     });
   });
+
+  describe("resetUnit", function() {
+    it("Whether the unit has been marked as moved this turn is reset", function() {
+        unit.resetUnit();
+        expect(unit.movedThisTurn).toEqual(false);
+    });
+    
+    it("Resets the filters on the unit", function() {
+        unit.resetUnit();
+        expect(unit.filters).toEqual(null);
+    })
+  })
 });
