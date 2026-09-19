@@ -38,7 +38,7 @@ function _loadAudio() {
 };
 
 function _loadImages() {
-  game.load.image('logo', 'game/assets/logo.jpg');
+  game.load.image('logo', 'game/assets/logo.png');
   game.load.image('parchment', 'game/assets/menus/ui/parchmentBackdrop.png');
   game.load.image('bottomMenuBar', 'game/assets/menus/ui/menuBar.png');
   game.load.image('topMenuBar', 'game/assets/menus/ui/topMenuBar.png');
@@ -70,8 +70,8 @@ function _loadSpritesheets() {
 
   game.load.atlasJSONHash("sprDwarves1", "game/assets/spritesheets/dwarf_units_new.png", "game/assets/spritesheets/dwarf_units.json");
   game.load.atlasJSONHash("sprDwarves2", "game/assets/spritesheets/blue_dwarf_spritesheet_positions_updated.png", "game/assets/spritesheets/dwarf_units_2.json");
-  game.load.spritesheet("sprElves1", "game/assets/spritesheets/elf_units.png", 32, 32);
-  game.load.spritesheet("sprElves2", "game/assets/spritesheets/elf_units2.png", 32, 32);
+  game.load.atlasJSONHash("sprElves1", "game/assets/spritesheets/elf_units_new.png", "game/assets/spritesheets/elf_units.json");
+  game.load.atlasJSONHash("sprElves2", "game/assets/spritesheets/elf_units2_new.png", "game/assets/spritesheets/elf_units2.json");
   game.load.atlasJSONHash("sprOrcs1", "game/assets/spritesheets/orcs_units_new.png", "game/assets/spritesheets/orcs_units.json");
   game.load.atlasJSONHash("sprOrcs2", "game/assets/spritesheets/orcs_units2_new.png", "game/assets/spritesheets/orcs_units2.json");
   game.load.spritesheet("selectionTiles", "game/assets/spritesheets/select_tiles.png", 32, 32);
