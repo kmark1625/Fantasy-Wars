@@ -68,12 +68,12 @@ function _loadSpritesheets() {
   game.load.tilemap("scorpionValley", "game/assets/maps/Scorpion_Valley.json", null, Phaser.Tilemap.TILED_JSON );
   game.load.image("tilesheet", "game/assets/maps/fantasy_wars_tilesheet.png");
 
-  game.load.spritesheet("sprDwarves1", "game/assets/spritesheets/dwarf_units.png", 32, 32);
-  game.load.spritesheet("sprDwarves2", "game/assets/spritesheets/dwarf_units2.png", 32, 32);
+  game.load.atlasJSONHash("sprDwarves1", "game/assets/spritesheets/dwarf_units_new.png", "game/assets/spritesheets/dwarf_units.json");
+  game.load.atlasJSONHash("sprDwarves2", "game/assets/spritesheets/blue_dwarf_spritesheet_positions_updated.png", "game/assets/spritesheets/dwarf_units_2.json");
   game.load.spritesheet("sprElves1", "game/assets/spritesheets/elf_units.png", 32, 32);
   game.load.spritesheet("sprElves2", "game/assets/spritesheets/elf_units2.png", 32, 32);
-  game.load.spritesheet("sprOrcs1", "game/assets/spritesheets/orcs_units.png", 32, 32);
-  game.load.spritesheet("sprOrcs2", "game/assets/spritesheets/orcs_units2.png", 32, 32);
+  game.load.atlasJSONHash("sprOrcs1", "game/assets/spritesheets/orcs_units_new.png", "game/assets/spritesheets/orcs_units.json");
+  game.load.atlasJSONHash("sprOrcs2", "game/assets/spritesheets/orcs_units2_new.png", "game/assets/spritesheets/orcs_units2.json");
   game.load.spritesheet("selectionTiles", "game/assets/spritesheets/select_tiles.png", 32, 32);
   game.load.spritesheet("blue_flag", "game/assets/spritesheets/blue_flag.png", 8, 8);
   game.load.spritesheet("red_flag", "game/assets/spritesheets/red_flag.png", 8, 8);
