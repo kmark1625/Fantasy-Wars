@@ -44,7 +44,7 @@ function _loadImages() {
   game.load.image('topMenuBar', 'game/assets/menus/ui/topMenuBar.png');
   game.load.image('statsMenu', 'game/assets/menus/ui/statsMenu.png');
   game.load.image('dwarfImage','game/assets/menus/images/dwarfImage.png');
-  game.load.image('elfImage','game/assets/menus/images/elfImage.png');
+  game.load.image('elfImage','game/assets/menus/images/elf_army_select.png');
   game.load.image('orcImage','game/assets/menus/images/orcImage.png');
   game.load.image('unitBuildScreen','game/assets/menus/ui/unitBuildScreen.png');
   game.load.image('instructions', 'game/assets/menus/ui/instructions.png');
@@ -58,6 +58,7 @@ function _loadSpritesheets() {
   game.load.spritesheet("mainMenuButtons", "game/assets/menus/buttons/mainMenuButtons.png", 193, 71);
   game.load.spritesheet("battleUIButtons", "game/assets/menus/buttons/battleUIButtons.png", 160, 64);
   game.load.spritesheet("armySelectionButtons", "game/assets/menus/buttons/armySelectionButtons.png", 224, 71);
+  game.load.spritesheet("armySelectIcons", "game/assets/menus/images/army_select_menu_icons.png", 512, 512);
   game.load.spritesheet('muteButton','game/assets/menus/buttons/muteButton.png', 32, 32);
   game.load.spritesheet("victoryButton", 'game/assets/menus/buttons/victoryStateButtons.png', 193, 71);
 
