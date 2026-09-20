@@ -66,5 +66,6 @@ Bumbling, but deadly orcs.  Beware of their sharp axes.
 ## How to run test suite
 * npm install
 * npm install -g karma-cli (to install npm globally)
+* npx serve
 * karma start
 * TODO: Look into how to add assets into the karma tests
