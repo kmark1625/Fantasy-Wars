@@ -1,4 +1,4 @@
-![Fantasy Wars](http://i.neoseeker.com/ca/fantasy_wars_conceptart_cLwPX.jpg)
+![Fantasy Wars](game/assets/logo.png)
 # Fantasy Wars
 Fantasy Wars is a turn-based strategy game where each players can choose one of three mythical factions. Build up an army, capture strategic footholds, and slaughter opposing forces on your way to victory. Eliminate all enemy units or capture their castle to ensure victory.
 
@@ -66,5 +66,6 @@ Bumbling, but deadly orcs.  Beware of their sharp axes.
 ## How to run test suite
 * npm install
 * npm install -g karma-cli (to install npm globally)
+* npx serve
 * karma start
 * TODO: Look into how to add assets into the karma tests
